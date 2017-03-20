@@ -1,9 +1,6 @@
-int frame = 800;
-int time = 0;
-int count = 0;
-int re = 10;
-int i;
-int t = 100;
+int frame = 800; //sets dimensions
+int i;//used in for loops
+int t = 100;//how ma shapes are shown per run
 
 void settings() {
  size(frame, frame); 
@@ -13,6 +10,7 @@ void settings() {
 void setup(){
  //size(800, 800);
  background(255,255,255);
+ //the four rect and colors
  fill(0,0,255);
  rect(0,0,frame/2,frame/2);
  fill(0,255,0);
@@ -23,6 +21,8 @@ void setup(){
  rect(frame/2,frame/2,frame/2,frame/2);
 }
 void draw(){ 
+//used for placing shapes
+//start
   if(mousePressed && mouseX > frame/2 && mouseY < frame/2) {
   //background(0, 0, 255);
   fill(255, 0, 0);  
@@ -89,9 +89,10 @@ else {
   rect(random(0,height/2),random(height/2,height),random(0,25),random(0,25));
   }
 }
+//end
 
 
-
+//for drawing the tri and circles
 noFill();
 fill(0,0,0);
 
